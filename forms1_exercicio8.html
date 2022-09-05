@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> Sua media no teste é: </h1>
+    <script>
+        let n1 = parseInt(prompt("Insira sua primeira nota do teste: "))
+        let n2 = parseInt(prompt("Insira sua segunda nota do teste: "))
+        let n3 = parseInt(prompt("Insira sua terceira nota do teste: "))
+        let n4 = parseInt(prompt("Insira sua quarta nota do teste: "))
+
+        if (n1 > 0 && n1 < 10 && n2 > 0 && n2 < 10 && n3 > 0 && n3 < 10 && n4 > 0 && n4 < 10) {
+            let calculo = (n1 + n2 + n3 + n4) / 4
+            if (calculo >= 5) {
+                document.write("Você passou no teste")
+            } else {
+                document.write("Tente novamente")
+            }
+        } 
+        
+        else {
+            document.write("Um dos numeros inseridos não é valido, tente novamente inserindo numeros de 0 a 10")
+        }
+
+    </script>
+</body>
+
+</html>
